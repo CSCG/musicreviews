@@ -27,7 +27,7 @@ import scraperwiki
 import lxml.html
 import lxml.etree
 import pprint
-html = scraperwiki.scrape("http://www.metacritic.com/music")
+html = scraperwiki.scrape("https://www.metacritic.com/music")
 root = lxml.html.fromstring(html)
 xp_items = lxml.etree.XPath(
     u"/".join((
